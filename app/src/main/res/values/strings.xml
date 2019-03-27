@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">mobile_task_1_2_Clicker</string>
+    <string name="app_name">Clicker</string>
+    <string name="push">Push me!</string>
+    <string name="textafter">Вы нажали на кнопку</string>
+    <string name="afternumb">раз.</string>
+    <string name="calc">I want a calc!</string>
+    <string name="stringcalc">Вычитание и равно пока не работает.</string>
 </resources>
