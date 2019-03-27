@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (num==2 || num==3 || num==4)
                 {
                     tv2.setText("раза.");
-                }else{tv2.setText("раза.");}
+                }else{tv2.setText("раз.");}
                 break;
 
             case R.id.clear:
