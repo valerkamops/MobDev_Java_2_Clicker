@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView mainText;
     Button mainBtn;
+    Button decreaseBtn;
+    TextView tvNumber;
 
     private long score = 0;
 
@@ -20,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mainText = (TextView) findViewById(R.id.mainText);
+        tvNumber = findViewById(R.id.tvNumber);
         mainBtn = (Button) findViewById(R.id.button);
+        decreaseBtn = findViewById(R.id.btnDecrease);
+
 
 
         View.OnClickListener clickListener = new View.OnClickListener() {
@@ -32,8 +37,20 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        decreaseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                score = score == 0 ? 0 : score-1;
+                UpdateNumberView();
+            }
+        });
+
         mainBtn.setOnClickListener(clickListener);
 
+    }
+
+    private void UpdateNumberView() {
+        tvNumber.setText(String.valueOf(score));
     }
 }
 
