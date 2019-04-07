@@ -19,25 +19,28 @@
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:text="Pressed"/>
 
-        <TextView
+
+        <ImageButton
             android:id="@+id/tvNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:text="Увеличить"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[4]" />
+
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:id="@+id/mainBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Уменьшить" />
 
         <Button
-            android:id="@+id/btnDecrease"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/decrease"/>
+            android:id="@+id/tvNull"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:text="Сбросить" />
 
 
     </LinearLayout>
